@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: antiquewhite;
+    padding: 92px 48px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    /* Remove o recuo padrão da lista */
+}
+
+.educacao li::before,
+.exp-profissional li::before {
+    content: ' ';
+    /* Define um espaço vazio como conteúdo antes de cada item da lista */
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+
+    background-color: #9d9fa1;
+    vertical-align: middle;
+    /* Alinha verticalmente o marcador com o texto */
+
+}
+
+.educacao li,
+.exp-profissional li {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin: 20px;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    color: #334155;
+    padding: 10px 0;
+}
+
+h2 {
+    padding: 20px;
+}
+
+p.parag-home {
+    padding: 20px 0;
+}
+
+.foto {
+    margin: 20px;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.btn-menu, .voltar, .rede-social {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #334155;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-menu:hover, .voltar:hover, .rede-social:hover {
+    background-color: #555;
+    color: white;
+}
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+ul.hobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.hobby p {
+    margin: 20px;
+}
+
+.hobby li {
+    margin: 20px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-hobby {
+    width: 200px;
+    margin: 20px;
+}

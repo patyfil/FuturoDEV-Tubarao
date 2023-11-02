@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: antiquewhite;
+    padding: 92px 48px;
+}
+
+ul {
+    list-style-type: square; 
+}
+
+nav {
+    margin: 20px;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    color: #334155;
+}
+
+h2{
+    padding: 20px;
+}
+
+.foto {
+    margin: 20px;
+    border: 2px solid #334155;
+    border-radius: 10px; 
+    height: 100px; 
+}
+
+.btn-menu, .voltar, .rede-social {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #334155;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-menu:hover, .voltar:hover, .rede-social:hover {
+    background-color: #555; 
+    color: white; 
+}

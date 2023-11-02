@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: #ffffff;
+    
+}
+
+.foto {
+    margin: 20px;
+    border: 2px solid #333;
+    border-radius: 10px; 
+    height: 100px; 
+}
+
+.voltar {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
