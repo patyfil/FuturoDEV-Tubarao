@@ -1,22 +1,29 @@
+:root {
+    --cor-btn: #4CAF50;
+    --cor-btn-hover: #FFC106;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --cor-btn: #4CAF50;
-    --cor-btn-hover: #3e8e41;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
-    text-align: center;
     background: white;
 }
 
@@ -25,10 +32,50 @@ body {
     color: #7a7575;
 }
 
-.conteudo img {
-    width: 50px;
-    margin-bottom: 10px;
+.resultado-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+/* Resultado após clicar no botão Calcular */
+.resultado-container-calculo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img.exibir-imagem {
+    width: 50px;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 250px;
+    color: #7a7575;
+    font-weight: bold;
+}
+
+
+form#frete-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px;
+    background: #f2f2f2;
+}
+
 
 .conteudo input {
     margin-bottom: 10px;
@@ -38,21 +85,33 @@ body {
     width: 200px;
 }
 
+
 .conteudo input::placeholder {
     color: #C5D1DA;
 }
 
-.conteudo button {
-    width: 70px;
+.conteudo button,
+.btn__calcular__novamente {
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
     padding: 8px;
     border: 2px solid #C4CED6;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: var(--cor-btn);
     color: white;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 5px 0 rgb(192, 191, 191)
 }
 
-.conteudo button:hover {
+
+.conteudo button:hover,
+.btn__calcular__novamente:hover {
     background-color: var(--cor-btn-hover);
 }
 
+button.btn__calcular__novamente {
+    width: 150px;
+    margin-top: 20px;
+}
