@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX02 - Cálcular Média</title>
+    <link rel="shortcut icon" href="img/javascript.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="calculadora" class="conteudo">
+            <h1>Cálculo de Média</h1>
+            <img class="exibir-imagem" src="img/calculator.png" alt="imagem das operações matemáticas">
+            <form action="resultado.html" id="notas_form">
+                <input type="number" name="nota1" id="nota1" placeholder="Nota 1" required>
+                <br>
+                <input type="number" name="nota2" id="nota2" placeholder="Nota 2" required>
+                <br>
+                <input type="number" name="nota3" id="nota3" placeholder="Nota 3" required>
+                <button onclick="calcular()" type="submit" class="btn">Calcular</button>
+            </form>
+        </section>
+
+        <section id="calculadora__resultado" class="conteudo">
+            <h1>Resultado</h1>
+            <img class="exibir-imagem" src="img/calculator.png" alt="imagem das operações matemáticas">
+            <div class="resultado_container_calculo">
+                <p id="resultado" class="cor-verde"></p>
+            </div>
+            <button onclick="limpar()" type="submit" class="btn btn__calcular__novamente">Calcular Novamente</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
