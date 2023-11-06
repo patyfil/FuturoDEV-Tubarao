@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03 - Calcular FGTS</title>
+    <link rel="shortcut icon" href="img/javascript.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="calculadora" class="conteudo">
+            <h1>Cálculo</h1>
+            <img class="exibir-imagem" src="img/fgts.png" alt="logo FGTS">
+            <form action="resultado.html" id="salario_form">
+                <input type="number" name="valorSalarioBruto" id="valorSalarioBruto" placeholder="Salário Bruto" required>
+                <br>
+                <button onclick="calcular()" type="submit" class="btn">Calcular</button>
+            </form>
+        </section>
+
+        <section id="calculadora__resultado" class="conteudo">
+            <h1>Resultado</h1>
+            <img class="exibir-imagem" src="img/fgts.png" alt="logo FGTS">
+            <div class="resultado_container_calculo">
+                <p id="fgtsMensal" class=""></p>
+                <p id="fgtsAnual" class=""></p>
+            </div>
+            <button onclick="limpar()" type="submit" class="btn btn__calcular__novamente">Calcular Novamente</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

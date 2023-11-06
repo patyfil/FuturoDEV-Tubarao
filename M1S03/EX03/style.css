@@ -1,0 +1,135 @@
+:root {
+    --cor-btn: #4CAF50;
+    --cor-btn-hover: #FFC106;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: white;
+}
+
+.conteudo h1 {
+    margin-bottom: 10px;
+    color: #7a7575;
+}
+
+.resultado-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Resultado após clicar no botão Calcular */
+.resultado_container_calculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img.exibir-imagem {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+#fgtsMensal,
+#fgtsAnual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    align-self: center;
+
+    margin: 10px 0;
+    padding: 10px 0;
+
+    width: 350px;
+    height: 80px;
+    color: #7a7575;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+#fgtsAnual.cor_verde {
+    border: 2px solid #9fdb9f;
+    background-color: #dbf0dc;    
+}
+
+#fgtsMensal.cor_azul {
+    border: 2px solid #a8a9f5;
+    background-color: #dbeffc;    
+}
+
+
+form#salario_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px;
+    background: #f2f2f2;
+}
+
+
+.conteudo input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #C4CED6;
+    border-radius: 3px;
+    width: 200px;
+}
+
+
+.conteudo input::placeholder {
+    color: #C5D1DA;
+}
+
+.conteudo button,
+.btn__calcular__novamente {
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    padding: 8px;
+    border: 2px solid #C4CED6;
+    border-radius: 5px;
+    background-color: var(--cor-btn);
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 5px 0 rgb(192, 191, 191)
+}
+
+
+.conteudo button:hover,
+.btn__calcular__novamente:hover {
+    background-color: var(--cor-btn-hover);
+}
+
+button.btn__calcular__novamente {
+    width: 150px;
+    margin-top: 20px;
+}
