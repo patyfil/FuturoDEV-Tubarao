@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX04 - Gerar Pedido de Férias</title>
+    <link rel="shortcut icon" href="img/javascript.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="carta" class="conteudo">
+            <h1>Carta de Pedido de Férias</h1>
+            <img class="exibir-imagem" src="img/ferias.png" alt="imagem férias">
+            <form action="" id="dados_form">
+                <div class="nome_container">
+                    <label for="nome">Nome do funcionário:</label>
+                    <input type="text" name="nomeFuncionario" id="nomeFuncionario" placeholder="Digite o nome"
+                        required>
+                    <br>
+                </div>
+                <div class="date_container">
+                    <div class="data">
+                        <label for="dataInicio">Data de Início:</label>
+                        <input type="date" name="dataInicial" id="dataInicial" required>
+                    </div>
+                    <div class="data">
+                        <label for="dataTermino">Data de Término:</label>
+                        <input type="date" name="dataFinal" id="dataFinal" required>
+                    </div>
+                </div>
+                
+                <br>                
+                <button onclick="calcular()" type="submit" class="btn">Gerar carta</button>
+            </form>
+        </section>
+
+        <section id="carta__resultado" class="conteudo">
+            <h1>Carta de Pedido de Férias</h1>
+            <img class="exibir-imagem" src="img/ferias.png" alt="imagem férias">
+            <div class="resultado_container">
+                <p>Caro(a) responsável,</p>
+                <p>Gostaria de solicitar minhas férias.</p>
+                <p>Nome do Funcionário(a): <span id="nomeFuncionario__resultado"></span></p>
+                <p>Data de início: <span id="dataInicial__resultado"></span></p>
+                <p>Data de término: <span id="dataFinal__resultado"></span></p>
+                <p>Agradeço a atenção.</p>
+                <p>Atenciosamente, <span id="nomeFuncionario_carta"></span></p>
+                <p>Gerado em <span id="dataEmissao"></span>.</p>
+            </div>
+            <button onclick="limpar()" type="submit" class="btn btn__gerar__outra__carta">Gerar outra carta</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
