@@ -10,27 +10,29 @@
 </head>
 
 <body>
-    <div id="calculadora" class="conteudo">
-        <h1>Cálculo de Frete</h1>
-        <img class="exibir-imagem" src="img/frete.gif" alt="imagem caminhão de frete">
-        <form action="resultado.html" id="frete-form">
-            <input type="number" name="peso" id="peso" placeholder="Peso do produto" required>
-            <br>
-            <input type="number" name="distancia" id="distancia" placeholder="Distância do trajeto" required>
-            <br>
-            <button onclick="calcular()" type="submit" class="btn">Calcular</button>
-        </form>
-    </div>
 
-    <div id="calculadora__resultado" class="conteudo">
-        <h1>Cálculo de Frete</h1>
-        <div class="resultado-container-calculo">
+    <main>
+        <section id="calculadora" class="conteudo">
+            <h1>Cálculo de Frete</h1>
             <img class="exibir-imagem" src="img/frete.gif" alt="imagem caminhão de frete">
-            <p id="resultado"></p>
-        </div>
-        <button onclick="limpar()" type="submit" class="btn btn__calcular__novamente">Calcular Novamente</button>
+            <form action="resultado.html" id="frete-form">
+                <input type="number" name="peso" id="peso" placeholder="Peso do produto" required>
+                <br>
+                <input type="number" name="distancia" id="distancia" placeholder="Distância do trajeto" required>
+                <br>
+                <button onclick="calcular()" type="submit" class="btn">Calcular</button>
+            </form>
+        </section>
 
-    </div>
+        <section id="calculadora__resultado" class="conteudo">
+            <h1>Cálculo de Frete</h1>
+            <div class="resultado-container-calculo">
+                <img class="exibir-imagem" src="img/frete.gif" alt="imagem caminhão de frete">
+                <p id="resultado"></p>
+            </div>
+            <button onclick="limpar()" type="submit" class="btn btn__calcular__novamente">Calcular Novamente</button>
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
 
