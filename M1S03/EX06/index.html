@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX06 - Lanchonete</title>
+    <link rel="shortcut icon" href="img/javascript.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="carta" class="conteudo">
+            <h1>Lanchonete Online</h1>
+            <img class="exibir-imagem" src="img/lanchonete.png" alt="imagem férias">
+            <table border="1">
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Valor (R$)</th>
+                </tr>
+                <tr>
+                    <td>1123</td>
+                    <td>Hambúrguer</td>
+                    <td>R$ 12,00</td>
+                </tr>
+                <tr>
+                    <td>3423</td>
+                    <td>Sanduíche de pernil</td>
+                    <td>R$ 9,00</td>
+                </tr>
+                <tr>
+                    <td>4521</td>
+                    <td>Bauru</td>
+                    <td>R$ 15,00</td>
+                </tr>
+                <tr>
+                    <td>5322</td>
+                    <td>Sanduíche de pernil</td>
+                    <td>R$ 34,99</td>
+                </tr>
+            </table>
+            <br>
+            <!-- <label for="codigo">Código do Produto:</label> -->
+            <input type="text" id="codigo" placeholder="Qual o código do produto">
+            <br>
+            <!-- <label for="quantidade">Quantidade:</label> -->
+            <input type="text" id="quantidade" placeholder="Quantidade">
+            <br>
+            <button onclick="calcularPedido()" type="submit" class="btn">Fazer Pedido</button>
+        </section>
+
+        <section id="carta__resultado" class="conteudo">
+            <h1>Lanchonete Online</h1>
+            <img class="exibir-imagem" src="img/lanchonete.png" alt="imagem férias">
+            <div id="resultadoPedido" class="resultado_container">
+                <p class="valor__total">;</p>
+                <p class="lanchonete_parag">Lanchonete online agradece!</p>
+            </div>
+            <button onclick="limpar()" type="submit" class="btn btn__gerar__outra__carta">Fazer outro pedido</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

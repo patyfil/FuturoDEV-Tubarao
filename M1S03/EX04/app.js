@@ -1,4 +1,4 @@
-// Utilizando window.prompt() e window.alert():
+// Utilizando window.prompt() e document.write():
 /*
 // Pergunte com prompt o nome da pessoa
 let nome = prompt("Digite o nome da pessoa: ")
@@ -28,6 +28,8 @@ document.write("Data de término: " + dataTermino + "\n\n");
 document.write("Agradeço a atenção.\n\n");
 document.write("Atenciosamente, " + nome + ".");
 */
+
+
 
 // Função para obter a data formatada
 function formatarData(data) {
@@ -88,9 +90,6 @@ function getDataAtual() {
     return dataFormatada
 
 }
-
-
-
 
 
 // Função para limpar o resultado e os campos de entrada

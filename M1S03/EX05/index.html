@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX05 - Convite Casamento</title>
+    <link rel="shortcut icon" href="img/javascript.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="convite" class="conteudo">
+            <h1>Convite Casamento</h1>
+            <img class="exibir-imagem" src="img/casamento.png" alt="imagem férias">
+            <form action="" id="dados_form">
+                <div class="nome_container">
+                    <label for="nomeConvidado">Nome do convidado(a):</label>
+                    <input type="text" name="nomeConvidado" id="nomeConvidado" placeholder="Digite o nome do convidado(a)"
+                        required>
+                    <br>
+                    <label for="nomeNoivo">Nome do noivo:</label>
+                    <input type="text" name="nomeNoivo" id="nomeNoivo" placeholder="Digite o nome do noivo" required>
+                    <br>
+                    <label for="nomeNoiva">Nome da noiva:</label>
+                    <input type="text" name="nomeNoiva" id="nomeNoiva" placeholder="Digite o nome da noiva" required>
+                    <br>
+                </div>
+                <div class="date_container">
+                    <div class="data">
+                        <label for="dataCasamento">Data do casamento:</label>
+                        <input type="date" name="dataCasamento" id="dataCasamento" required>
+                    </div>
+                    <div class="data">
+                        <label for="horaCasamento">Hora:</label>
+                        <input type="time" name="horaCasamento" id="horaCasamento" required>
+                    </div>
+                </div>
+                
+                <br>                
+                <button onclick="gerarConvite()" type="submit" class="btn">Gerar convite</button>
+            </form>
+        </section>
+
+        <section id="convite__resultado" class="conteudo">
+            <h1>Convite Casamento</h1>
+            <img class="exibir-imagem" src="img/casamento.png" alt="imagem férias">
+            <div class="resultado_container">
+                <p id="convite_texto"></p>
+            </div>
+            <button onclick="limpar()" type="submit" class="btn btn__gerar__outro__convite">Gerar outro convite</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

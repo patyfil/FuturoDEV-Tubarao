@@ -1,0 +1,131 @@
+:root {
+    --cor-btn: #4CAF50;
+    --cor-btn-hover: #FFC106;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn {
+    margin: 0 auto;
+}
+
+label {
+    font-size: 12px;
+    color: #7a7575;
+    font-weight: 700;
+}
+
+/* Título e imagem  */
+.conteudo h1 {
+    margin-bottom: 10px;
+    color: #7a7575;
+}
+
+img.exibir-imagem {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.conteudo {
+    margin: 0 auto;
+}
+
+.conteudo input {
+    padding: 10px;
+    border: 2px solid #C4CED6;
+    border-radius: 3px;
+    width: 80%;
+}
+
+.conteudo input::placeholder {
+    color: #C5D1DA;
+}
+
+/* Section carta */
+section#carta.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+/* Section resultado */
+section#carta__resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Resultado após clicar no botão Fazer Pedido */
+.resultado_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.valor__total  {
+    font-size: 18px;
+
+    font-weight: 700;
+    color: #475a47;
+}
+
+p.lanchonete_parag {
+    padding: 10px;
+    color: gray;
+    font-style: italic;
+
+}
+
+.conteudo button,
+.btn__gerar__outra__carta {
+
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    padding: 8px;
+    border: 2px solid #C4CED6;
+    border-radius: 5px;
+    background-color: var(--cor-btn);
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 5px 0 rgb(192, 191, 191)
+}
+
+.conteudo button:hover,
+.btn__gerar__outra__carta:hover {
+    background-color: var(--cor-btn-hover);
+}
+
+button.btn__gerar__outra__carta {
+    width: 150px;
+    margin-top: 20px;
+}
